@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { Recipe } from '../recipe.model';
@@ -9,7 +9,7 @@ import { RecipesService } from '../recipes.service';
   templateUrl: './recipe-detail.page.html',
   styleUrls: ['./recipe-detail.page.scss'],
 })
-export class RecipeDetailPage implements OnInit {
+export class RecipeDetailPage implements OnInit, OnDestroy {
   loadedRecipe: Recipe;
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -28,6 +28,22 @@ export class RecipeDetailPage implements OnInit {
     });
   }
 
+
+  ionViewWillEnter(){
+    console.log('ionViewWillEnter');
+  }
+  ionViewDidEnter(){
+    console.log('ionViewDidEnter');
+  }
+  ionViewWillLeave(){
+    console.log('ionViewWillLeave');
+  }
+  ionViewDidLeave(){
+    console.log('ionViewDidLeave');
+  }
+  ngOnDestroy(){
+    this.ngOnDestroy();
+  }
   onDeleteRecipe(){
     this.alertCtrl.create({
       header: 'Are you sure?',
