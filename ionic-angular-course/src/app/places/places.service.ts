@@ -9,7 +9,7 @@ export class PlacesService {
     new Place('p1',
     'Manhattan Mansion',
     'Maybe in heart of NYC',
-    'https://www.wheretraveler.com/sites/default/files/images/ExecutiveMansion-front.jpg',
+    'https://yyccalgarybusiness.ca/wp-content/uploads/sites/14/2018/03/front_of_house_044.jpg',
     150.00),
     new Place('p2',
     'Random Mansion #2',
