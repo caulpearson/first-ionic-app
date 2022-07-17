@@ -14,11 +14,11 @@
             <ion-icon name="business" slot="start"></ion-icon>
             <ion-label>Discover</ion-label>
           </ion-item>
-          <ion-item routerLink="/booking">
+          <ion-item routerLink="/bookings">
             <ion-icon name="checkbox-outline" slot="start"></ion-icon>
             <ion-label>Booking</ion-label>
           </ion-item>
-          <ion-item button>
+          <ion-item (click)="onLogout()" button>
             <ion-icon name="exit" slot="start"></ion-icon>
             <ion-label>Log Out</ion-label>
           </ion-item>
